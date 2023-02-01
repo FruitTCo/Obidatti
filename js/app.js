@@ -23,13 +23,13 @@ if (isTouchDevice()) {
 
 (function () {
   var header = $('.js-header'),
-      items = header.find('.js-header-item'),
-      burger = header.find('.js-header-burger'),
-      wrap = header.find('.js-header-wrap');
+    items = header.find('.js-header-item'),
+    burger = header.find('.js-header-burger'),
+    wrap = header.find('.js-header-wrap');
   items.each(function () {
     var item = $(this),
-        head = item.find('.js-header-head'),
-        body = item.find('.js-header-body');
+      head = item.find('.js-header-head'),
+      body = item.find('.js-header-body');
     head.on('click', function (e) {
       e.stopPropagation();
 
@@ -61,9 +61,9 @@ if (isTouchDevice()) {
   if (select.length) {
     select.each(function () {
       var _this = $(this),
-          head = _this.find('.js-select-head'),
-          drop = _this.find('.js-select-drop'),
-          option = _this.find('.js-select-option');
+        head = _this.find('.js-select-head'),
+        drop = _this.find('.js-select-drop'),
+        option = _this.find('.js-select-option');
 
       head.on('click', function (e) {
         e.stopPropagation();
@@ -93,7 +93,7 @@ document.documentElement.style.setProperty('--vh', "".concat(vh, "px")); // togg
 
 (function () {
   var switchTheme = $('.js-theme'),
-      body = $('body');
+    body = $('body');
   switchTheme.on('change', function () {
     if (!body.hasClass('dark')) {
       body.addClass('dark');
@@ -107,7 +107,7 @@ document.documentElement.style.setProperty('--vh', "".concat(vh, "px")); // togg
 
 
 var prevArrow = '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" fill="none" viewBox="0 0 14 9"><path fill-rule="evenodd" d="M4.909.265a1 1 0 0 0-1.413.057l-3.231 3.5a1 1 0 0 0 0 1.357l3.231 3.5a1 1 0 0 0 1.47-1.357L3.284 5.5H13a1 1 0 1 0 0-2H3.284l1.682-1.822A1 1 0 0 0 4.909.265z" fill="#777e91"/></svg></button>',
-    nextArrow = '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" fill="none" viewBox="0 0 14 9"><path fill-rule="evenodd" d="M9.091.265a1 1 0 0 1 1.413.057l3.231 3.5a1 1 0 0 1 0 1.357l-3.231 3.5a1 1 0 0 1-1.47-1.357L10.716 5.5H1a1 1 0 1 1 0-2h9.716L9.034 1.678A1 1 0 0 1 9.091.265z" fill="#23262f"/></svg></button>';
+  nextArrow = '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" fill="none" viewBox="0 0 14 9"><path fill-rule="evenodd" d="M9.091.265a1 1 0 0 1 1.413.057l3.231 3.5a1 1 0 0 1 0 1.357l-3.231 3.5a1 1 0 0 1-1.47-1.357L10.716 5.5H1a1 1 0 1 1 0-2h9.716L9.034 1.678A1 1 0 0 1 9.091.265z" fill="#23262f"/></svg></button>';
 $(document).ready(function () {
   // slider learn
   $('.js-slider-learn').slick({
@@ -215,7 +215,7 @@ $(document).ready(function () {
 
 (function () {
   var category = $('.footer__category'),
-      menu = $('.footer__menu');
+    menu = $('.footer__menu');
   category.on('click', function () {
     $(this).toggleClass('active');
     $(this).next().slideToggle();
@@ -234,12 +234,12 @@ $(".js-scroll").click(function () {
 
 (function () {
   var actions = $('.js-actions'),
-      items = actions.find('.js-actions-item'),
-      favorite = actions.find('.js-actions-favorite');
+    items = actions.find('.js-actions-item'),
+    favorite = actions.find('.js-actions-favorite');
   items.each(function () {
     var item = $(this),
-        button = item.find('.js-actions-button'),
-        body = item.find('.js-actions-body');
+      button = item.find('.js-actions-button'),
+      body = item.find('.js-actions-body');
     button.on('click', function (e) {
       e.stopPropagation();
 
@@ -265,8 +265,8 @@ $(".js-scroll").click(function () {
 
 (function () {
   var item = $('.faq__item'),
-      head = item.find('.faq__head'),
-      body = item.find('.faq__body');
+    head = item.find('.faq__head'),
+    body = item.find('.faq__body');
   head.on('click', function () {
     var thisHead = $(this);
     thisHead.parents('.faq__item').toggleClass('active');
@@ -277,7 +277,7 @@ $(".js-scroll").click(function () {
 
 (function () {
   var toggle = $('.notifications__toggle'),
-      filters = $('.notifications__filters');
+    filters = $('.notifications__filters');
   toggle.on('click', function () {
     filters.toggleClass('visible');
   });
@@ -290,8 +290,8 @@ $(".js-scroll").click(function () {
   if (dateRange.length) {
     dateRange.each(function () {
       var _this = $(this),
-          single = _this.data('single-month'),
-          container = _this.data('container');
+        single = _this.data('single-month'),
+        container = _this.data('container');
 
       _this.dateRangePicker({
         inline: true,
@@ -322,8 +322,8 @@ $(".js-scroll").click(function () {
   var items = $('.js-activity-item');
   items.each(function () {
     var item = $(this),
-        button = item.find('.js-activity-button'),
-        body = item.find('.js-activity-body');
+      button = item.find('.js-activity-button'),
+      body = item.find('.js-activity-body');
     button.on('click', function (e) {
       e.stopPropagation();
 
@@ -351,11 +351,11 @@ $('.profile__top, .wallet__top').on('click', function () {
   var tabs = $('.js-tabs');
   tabs.each(function () {
     var thisTabs = $(this),
-        nav = thisTabs.find('.js-tabs-link'),
-        item = thisTabs.find('.js-tabs-item');
+      nav = thisTabs.find('.js-tabs-link'),
+      item = thisTabs.find('.js-tabs-item');
     nav.on('click', function () {
       var thisNav = $(this),
-          indexNav = thisNav.index();
+        indexNav = thisNav.index();
       nav.removeClass('active');
       thisNav.addClass('active');
       item.hide();
@@ -386,10 +386,10 @@ $('.balances__row').on('click', function () {
 
 (function () {
   var currency = $('.currency'),
-      input = currency.find('.currency__input'),
-      value = currency.find('.currency__value'),
-      price = currency.find('.currency__result'),
-      button = currency.find('.currency__variants .currency__button');
+    input = currency.find('.currency__input'),
+    value = currency.find('.currency__value'),
+    price = currency.find('.currency__result'),
+    button = currency.find('.currency__variants .currency__button');
   input.on('keyup', function () {
     var inputValue = input.val();
     button.removeClass('active');
@@ -398,8 +398,8 @@ $('.balances__row').on('click', function () {
   });
   button.on('click', function () {
     var _this = $(this),
-        _thisText = _this.text(),
-        inputValue = input.val(); // console.log(_thisText);
+      _thisText = _this.text(),
+      inputValue = input.val(); // console.log(_thisText);
 
 
     button.removeClass('active');
@@ -415,10 +415,10 @@ $('.balances__row').on('click', function () {
 
 (function () {
   var bidding = $('.js-bidding'),
-      step = bidding.find('.js-bidding-step'),
-      item = bidding.find('.js-bidding-item'),
-      button = bidding.find('.js-bidding-button'),
-      back = bidding.find('.js-bidding-back');
+    step = bidding.find('.js-bidding-step'),
+    item = bidding.find('.js-bidding-item'),
+    button = bidding.find('.js-bidding-button'),
+    back = bidding.find('.js-bidding-back');
   var counter = 0;
   button.on('click', function () {
     var currentNext = ++counter;
@@ -443,17 +443,17 @@ $('.balances__row').on('click', function () {
   if (slider.length) {
     slider.each(function () {
       var _this = $(this),
-          min = _this.data('min'),
-          max = _this.data('max'),
-          start = _this.data('start'),
-          end = _this.data('end'),
-          step = _this.data('step'),
-          tooltips = _this.data('tooltips'),
-          postfix = _this.data('postfix');
+        min = _this.data('min'),
+        max = _this.data('max'),
+        start = _this.data('start'),
+        end = _this.data('end'),
+        step = _this.data('step'),
+        tooltips = _this.data('tooltips'),
+        postfix = _this.data('postfix');
 
       var optionStart = [start],
-          optionConnect = [true, false],
-          optionTooltips = false;
+        optionConnect = [true, false],
+        optionTooltips = false;
 
       if (end) {
         optionStart = [start, end];
@@ -489,9 +489,9 @@ $('.balances__row').on('click', function () {
 
 (function () {
   var wrapper = $('.js-bargaining-wrapper'),
-      buy = $('.js-bargaining-buy'),
-      sell = $('.js-bargaining-sell'),
-      close = $('.js-bargaining-close');
+    buy = $('.js-bargaining-buy'),
+    sell = $('.js-bargaining-sell'),
+    close = $('.js-bargaining-close');
   buy.on('click', function () {
     wrapper.addClass('show');
     $('.bargaining__col:first-child').show();
@@ -510,7 +510,7 @@ $('.balances__row').on('click', function () {
 
 (function () {
   var link = $('.js-exchange-link'),
-      item = $('.js-exchange-item');
+    item = $('.js-exchange-item');
   link.on('click', function () {
     var dataId = $(this).data('id');
     link.removeClass('active');
@@ -519,3 +519,71 @@ $('.balances__row').on('click', function () {
     $(".js-exchange-".concat(dataId)).show();
   });
 })();
+
+// Copy contract address functionality
+$("#copy__content").click(function () {
+  const copy__content = $(this).text()
+  navigator.clipboard.writeText(copy__content)
+  $(this).text("Copied Sucessfully!")
+  setTimeout(function() {
+    $(this).text(copy__content)
+  }, 500);
+})
+
+
+var TxtType = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtType.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+  this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+  this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 200 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+  delta = this.period;
+  this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+  this.isDeleting = false;
+  this.loopNum++;
+  delta = 500;
+  }
+
+  setTimeout(function() {
+  that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('typewrite');
+  for (var i=0; i<elements.length; i++) {
+      var toRotate = elements[i].getAttribute('data-type');
+      var period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtType(elements[i], JSON.parse(toRotate), period);
+      }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000; }";
+  document.body.appendChild(css);
+};
