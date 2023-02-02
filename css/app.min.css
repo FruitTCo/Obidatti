@@ -3592,9 +3592,9 @@ body.dark .some-icon {
     height: 56px;
     margin-right: 24px;
     border-radius: 50%;
-    background: #23262F; }
+    background: none; }
     .download__icon img {
-      max-width: 24px; }
+      max-width: 50px; }
     .download__icon:after {
       content: "";
       position: absolute;
