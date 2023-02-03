@@ -1680,6 +1680,22 @@ body.dark .some-icon {
   body.dark .section-bg {
     background: #18191D; }
 
+    .section-bg2 {
+      padding: 10px 0;
+      padding-top: 13px;
+      background: #F4F5F6;
+      margin: 0;
+    }
+      @media only screen and (max-width: 1179px) {
+        .section-bg2 {
+          padding: 12px 0; } }
+      @media only screen and (max-width: 767px) {
+        .section-bg2 {
+          padding: 4px 0; } }
+      body.dark .section-bg {
+        background: #18191D; }
+    
+
 .section-mb0 {
   margin-bottom: 0; }
   @media only screen and (max-width: 1179px) {
@@ -2819,6 +2835,35 @@ body.dark .some-icon {
       margin: 0 -64px; } }
     .main__bg img {
       width: 100%; }
+
+
+      .main__bg1 {
+        position: absolute;
+        top: 0px;
+        right: calc(50% - 750px);
+        width: 913px;
+        pointer-events: none; }
+        @media only screen and (max-width: 1179px) {
+          .main__bg1 {
+            top: 0;
+            right: calc(50% - 550px);
+            width: 600px; } }
+        @media only screen and (max-width: 1023px) {
+          .main__bg1 {
+            right: calc(50% - 500px); } }
+        @media only screen and (max-width: 767px) {
+          .main__bg1 {
+            position: static;
+            width: auto; } }
+      @media only screen and (max-width: 767px) and (max-width: 474px) {
+        .main__bg1 {
+          margin: 0 -64px; } }
+        .main__bg1 img {
+          width: 100%; }
+
+
+
+
   .main__cards {
     display: flex;
     padding: 24px 8px;
